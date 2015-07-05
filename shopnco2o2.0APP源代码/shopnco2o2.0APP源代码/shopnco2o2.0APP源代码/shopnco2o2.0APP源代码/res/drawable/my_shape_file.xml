@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+<solid android:color="#00000000"/> 
+
+<stroke android:width="0.5dp" android:color="#909090"/>  
+
+<corners android:radius="90dp" /> 
+
+{
+
+   //或者分步定义没个圆角。
+
+    <corners android:topLeftRadius="90dp"   
+
+     android:topRightRadius="90dp"
+
+     android:bottomRightRadius="90dp"      
+
+     android:bottomLeftRadius="90dp"/>  
+
+}
+
+</shape> 

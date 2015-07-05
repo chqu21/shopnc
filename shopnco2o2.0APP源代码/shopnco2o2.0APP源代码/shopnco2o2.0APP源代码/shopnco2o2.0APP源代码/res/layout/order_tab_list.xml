@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_hui"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0"
+                    android:visibility="gone" />
+
+                <!-- tab bar buttons -->
+
+                <RadioGroup
+                    android:id="@+id/main_tab_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/tab_bar_bg"
+                    android:orientation="horizontal"
+                    android:paddingTop="0.0dip" >
+
+                    <RadioButton
+                        android:id="@+id/order_index_dingdan"
+                        style="@style/MyTabButton"
+                        android:checked="true"
+                        android:drawableTop="@drawable/ic_tab_myorder_selected"
+                        android:text="@string/order_tab_dingdan_text"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/order_index_youhuiquan"
+                        style="@style/MyTabButton"
+                        android:drawableTop="@drawable/main_index_checkin_bg"
+                        android:text="@string/order_tab_youhuiquan_text" />
+
+                    <RadioButton
+                        android:id="@+id/order_index_huiyuanka"
+                        style="@style/MyTabButton"
+                        android:drawableTop="@drawable/my_card_icon_normal_d"
+                        android:text="@string/order_tab_huiyuanka_text" />
+                </RadioGroup>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+</LinearLayout>

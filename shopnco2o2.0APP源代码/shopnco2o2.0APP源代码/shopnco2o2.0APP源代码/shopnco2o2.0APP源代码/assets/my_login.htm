@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://m.dianping.com/login?redir=http%3A%2F%2Fm.dianping.com%2Fmy -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>用户登录-大众点评网</title>
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script>var G_rtop=+new Date,_gaq=[
+['_setAccount','MO-16496742-1'],
+['_addOrganic','soso','w'],
+['_addOrganic','sogou','query'],
+['_addOrganic','yodao','q'],
+['_addOrganic','bing','q'],
+['_addOrganic','360','q'],
+['_addOrganic','gougou','search'],
+['_setDomainName', '.m.dianping.com'],
+['_setAllowHash', false]];
+_gaq.push(['_trackPageview']);
+$(document).ready(function(){
+	$("#login_form").validate({
+        errorPlacement: function(error, element){
+			error.appendTo('.error_login');
+        },
+		rules: {
+			member_name: "required",
+			password: "required"
+		},
+		messages: {
+			member_name: "登陆用户名不能为空!",
+			password: "登陆密码不能为空!"
+		}
+	});
+});
+
+</script>
+
+<link href="http://m.dianping.com/account/css/style.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" async="" src="http://m.dianping.com/account/js/ga.js"></script></head>
+	<body>
+		
+		
+<!--<header>-->
+<!--	<div class="header-box">
+		<a id="J_cancel" href="javascript:;" class="new-btn new-btn-orange new-btn-back">
+        <b class="caret"></b>返回
+		</a>登录
+	</div>-->
+<!--</header>-->
+
+<section>
+	<!--登录-->
+	<form id="login_form" name="form" method="post">
+		<input type="hidden" name="postBack" value="true">
+		<div class="login-frame">
+			<ul><li>
+			<p id="msg_info" class="err-holder" style="display:none;"></p>
+			<p id="err_info" class="err-holder" style="display:none;"></p>
+			<p class="input-box">
+				<i class="input-desc desc-icon i-user"></i>
+				<input id="J_username" name="member_name" type="text" class="default" placeholder="可使用手机号、邮箱、昵称登录" value="">
+			</p>
+			</li>
+			<li>
+			<p class="input-box">
+				<i class="input-desc desc-icon i-pwd"></i>
+				<input id="J_password" name="password" type="password" class="default" placeholder="请输入密码">
+			</p>
+			<p class="forget"><a href="http://m.dianping.com/resetpassword">忘记密码</a></p>
+			</li>
+			<li>
+				<p class="input-box prov-box">
+					<input id="J_vcode" name="validate" type="text" class="default log-prov" placeholder="请输入右侧验证码">
+				</p>
+				<a class="proving"><img width="120" height="39" src="http://m.dianping.com/account/JValidateCode.jpg?xx=389" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;login_verify&#39;, &#39;click&#39;]);this.src=&#39;/account/JValidateCode.jpg?xx=&#39; + Math.floor(Math.random()*1001);"></a>
+			</li>
+			</ul>
+			<p>
+				<input type="button" id="J_quick_reg" onclick="window.location.href=&#39;/reg?redir=http://m.dianping.com/my&#39;" value="注册" class="icon-btn btn-white b-2">
+				<input type="button" id="loginSubmit" href="javascript:;" value="登录" class="icon-btn b-2 margin-lt-2">
+			</p>
+			
+			<p><label><input id="J_auth" name="keepLogin" type="checkbox" class="i-checkbox" checked="checked">一个月之内免登录</label></p>
+			<p><label><input id="J_agree" name="" type="checkbox" class="i-checkbox" checked="checked">我已看过并同意大众点评网<a href="http://www.dianping.com/aboutus/useragreement" title="用户使用协议" style="color:blue">《用户使用协议》</a></label></p>
+		</div>
+	</form>
+	<!--登录 end-->
+	<div class="login-wrap">
+		<p class="copyright"><span>其他账号登录</span></p>
+		<div class="login-list">
+			<a href="http://m.dianping.com/auth?ft=2&redir=http://m.dianping.com/my" class="sina">新浪登录</a>
+			<a href="http://m.dianping.com/auth?ft=5&redir=http://m.dianping.com/my" class="alipay">支付宝</a>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="http://m.dianping.com/account/js/zepto.js"></script>
+<script type="text/javascript" src="http://m.dianping.com/account/js/hippo.min.js"></script>
+<script type="text/javascript">try{ window.document.hippo(0,"m.dianping.com").pv(1); }catch(e){}</script>
+<script type="text/javascript" src="http://m.dianping.com/account/js/base.js"></script>
+<script type="text/javascript">
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = 'http://i1.dpfile.com/s/res/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<script type="text/javascript">
+DP.app.error = "";
+$(document).ready(function(){
+    DP.app.login('#J_login_form','login_submit');
+	DP.app.openMoreAuth();
+    $('#J_cancel').click(function(e) {
+    	e && e.preventDefault();	
+    	var prevLink = document.referrer;
+    	if(prevLink != '' && /(m.dianping.com|m.51ping.com|tuan.uc.cn)/.test(document.referrer)) {
+    		window.history.go(-1);
+    	} else {
+    		window.location.href = '/';
+    	}
+    });
+});
+</script>
+<!--内容 end-->
+
+	
+</body></html>

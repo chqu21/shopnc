@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_lay_bg"
+     >
+
+    <TextView
+        android:id="@+id/shop_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_post"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_id"
+        android:layout_margin="5dip"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <ImageView
+            android:id="@+id/image_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3.0dip"
+            android:layout_weight="1.5"
+            android:background="@drawable/avatar_96"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_tuan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:singleLine="true"
+                android:text="万达国际电影城电影票团购"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_tuan_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="￥ 0"
+                    android:textColor="@color/pink"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_tuan_buyer_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="状态 未支付"
+                    android:textColor="#909090"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="#909090"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_below="@id/linearlayout_post" />
+
+</RelativeLayout>

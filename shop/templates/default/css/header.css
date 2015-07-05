@@ -1,0 +1,322 @@
+﻿#topNav {
+	position: relative;
+	height: 38px;
+	border-bottom: 1px solid #e0dede;
+	background-color: #f7f7f7;
+	background: url(../images/lsimg/header_bg.png) 0 0 repeat-x;
+	background: linear-gradient(#fff, #f7f6f5);
+	background: -moz-linear-gradient(#fff, #f7f6f5);
+	background: -o-linear-gradient(#fff, #f7f6f5);
+	background: -webkit-linear-gradient(#fff, #f7f6f5);
+	box-shadow: 0 -1px 0 #fefcfc inset, 0 0 4px rgba(0,0,0,.15);
+	-moz-shadow: 0 -1px 0 #fefcfc inset, 0 0 4px rgba(0,0,0,.15);
+	-webkit-shadow: 0 -1px 0 #fefcfc inset, 0 0 4px rgba(0,0,0,.15)
+}
+#topNav-inner {
+	width: 990px;
+	margin: 0 auto;
+}
+#topNav-inner-new {
+	width: 1200px;
+	margin: 0 auto;
+}
+.topNav-left {
+	display: inline-block;
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+	float: left;
+}
+.topNav-left li {
+	float: left;
+	font-size: 12px;
+}
+.topNav-left li em {
+	color: #000000;
+	margin: 0 8px;
+	float: left;
+}
+.topNav-left li a {
+	float: left;
+}
+.topNav-left li.topnav-phone a, .topNav-left li.topnav-add a {
+	background: url(../images/lsimg/phone-icon.jpg) no-repeat;
+	padding-left: 20px;
+	display: block;
+}
+.topNav-left li.topnav-phone a {
+	background-position: 0 9px;
+}
+.topNav-left li.topnav-add a {
+	background-position: 0 -39px;
+}
+.topNav-left li.seller-login {
+	background-color: #D93600;
+	border: 1px solid #B22D00;
+	border-radius: 3px;
+	box-shadow: 2px 2px 0 rgba(204, 204, 204, 0.65);
+	display: inline-block;
+	margin: 8px 0 0 15px;
+}
+#topNav .topNav-left li.seller-login a {
+	color: #FFFFFF;
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	padding: 1px 4px;
+}
+#topNav .topNav-left li.seller-login a:hover {
+	background-color: #B22D00;
+	text-decoration: none;
+}
+.topNav-right .login_btn, .topNav-right a.login_btn:hover, .topNav-right .register_btn, .main-nav-left li.add_shop a, #mainnav_user .tools, #mainnav_user:hover .tools, .error_login .error/*.register_bd .error*/ {
+	background: url(../images/lsimg/nav_sp.gif) no-repeat;
+}
+.topNav-right li a.login_btn {
+	background-position: 0 0;
+	display: block;
+	float: left;
+	height: 30px;
+	margin-right: 10px;
+	margin-top: 4px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 63px;
+}
+.topNav-right li a.register_btn {
+	background-position: -66px -0;
+	display: block;
+	float: left;
+	height: 30px;
+	margin-top: 4px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 66px;
+	margin-right: 15px;
+}
+.topNav-right li a.login_btn:hover {
+	background-position: 0 -33px;
+}
+.topNav-right li a.register_btn:hover {
+	background-position: -66px -33px;
+}
+.topNav-right {
+	display: inline-block;
+	float: right;
+	height: 36px;
+	line-height: 36px;
+}
+.topNav-right li a:hover {
+	color: #FF5500;
+	text-decoration: none;
+}
+.topNav-right li {
+	float: left;
+	display: block;
+}
+
+.user_info {
+	height: 30px;
+	float: left;
+	margin: 3px 15px 0 0;
+}
+.user_info img {
+	width: 30px;
+	height: 30px;
+	float: left;
+	border-radius: 10%;
+}
+.user_info a {
+	float: left;
+	line-height: 30px;
+	color: #666666;
+	margin-left: 8px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.user_info a:hover {
+	color: #d94128;
+}
+.topNav-right li#mainnav_user:hover ul {
+	visibility: visible;
+}
+
+#topNav a {
+	color: #666;
+}
+.topNav-right li#mainnav_user {
+	position: relative;
+	z-index: 3;
+	display: block;
+	cursor: pointer;
+}
+
+#mainnav_user ul {
+	background: #FFFFFF;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	color: #221919;
+	visibility: hidden;
+	font-size: 13px;
+	overflow: hidden;
+	position: absolute;
+	text-align: left;
+	top: 38px; right:0px;
+	width: 100px;
+	border: 1px #cccaca solid;
+}
+
+#mainnav_user ul li {
+	border-bottom: 1px solid #E1DFDF;
+	float: left;
+	width: 100%;
+}
+#mainnav_user:hover .tools {
+	background-position: 0 -189px;
+}
+#mainnav_user .tools {
+	background-position: 0 -152px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 2px 0 0 0;
+}
+
+#mainnav_user ul li a {
+	display: block;
+	font-weight: 400;
+	line-height: 12px;
+	padding: 8px 10px 8px 10px;
+	text-align: left;
+	color: #666;
+}
+#mainnav_user ul li a:hover {
+	color: #221919;
+	background: #f2f2f2;
+	text-decoration: none;
+}
+#mainnav_user ul li .info {
+	color: #A1A1A1;
+	font-size: 12px;
+	margin-top: 10px;
+}
+#mainnav_user ul li .info span {
+	font-family: Verdana, Geneva, sans-serif;
+	margin-right: 10px;
+}
+
+
+/*导航*/
+#main-nav {
+	position: relative;
+	height: 45px;
+	background: #e64d5e;
+}
+#main-nav-wrap {
+	width: 990px;
+	height: 45px;
+	margin: 0 auto;
+	display: block;
+	background: #e64d5e;
+}
+#main-nav-wrap ul {
+	width: auto;
+	height: 45px;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+#main-nav-wrap ul li {
+	display: block;
+	float: left;
+	height: 45px;
+	line-height: 45px;
+}
+#main-nav-wrap ul li .split-line {
+	background: url(../images/lsimg/shop_line.jpg) no-repeat right 0;
+	display: block;
+}
+#main-nav-wrap ul li a {
+	color: #FFFFFF;
+	display: inline-block;
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	height: 45px;
+	overflow: hidden;
+	padding: 0 30px;
+	text-align: left;
+	text-decoration: none;
+	vertical-align: top;
+}
+#main-nav-wrap ul li a:hover {
+	background: #a30314;
+	padding-left: 32px;
+	position: relative;
+	margin-right: -2px;
+	right: 2px;
+	text-decoration: none;
+}
+#main-nav-wrap ul li a.current {
+	background: #c32e3e;
+	padding-left: 32px;
+	position: relative;
+	margin-right: -2px;
+	right: 2px;
+	text-decoration: none;
+}
+
+
+.main-nav-left {
+	display: inline-block;
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+	float: left;
+}
+
+.main-nav-left li a {
+	color: #666666;
+	display: inline-block;
+	padding: 0 14px;
+}
+
+
+/*面包屑*/
+.sitenav {
+	height: 45px;
+	line-height: 45px;
+	font-family:Verdana ;
+	width: 990px;
+}
+.sitenav a:link {
+	color:#E64D5E; padding:2px;
+	text-decoration: none;
+}
+.sitenav a:visited {
+	color: #E64D5E;
+	text-decoration: none;
+}
+.sitenav h2 {
+	display: inline;
+	font-size: 12px;
+	font-weight: normal;
+}
+.sitenav a:active {
+	color: #ef8317;
+}
+.sitenav a:hover {
+	color: #fff; background:#E64D5E; padding:2px;
+}
+
+.dcode-box{cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 3;}
+	
+.dcode-box img{
+    background-position: 0 -152px;
+    display: block;
+    height: 152px;
+    margin: 2px 10px 0 0;
+    width: 152px;
+}
+.code-img{ background:url(../images/lsimg/code-box.jpg) no-repeat right 0; width:30px; height:30px; margin:5px 5px 3px 0;}

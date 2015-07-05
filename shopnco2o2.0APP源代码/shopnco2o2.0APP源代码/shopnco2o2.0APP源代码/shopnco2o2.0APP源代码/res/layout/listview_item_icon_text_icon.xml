@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="true"
+    android:background="@color/bg_hui" >
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dip"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dip"
+        android:maxWidth="50dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/item_arraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dip"
+        android:gravity="center"
+        android:src="@drawable/arrow_normal"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/item_arraw"
+        android:layout_toRightOf="@id/item_image"
+        android:paddingLeft="5.0dip"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_hui">
+<!-- 主界面 -->
+<TabHost 
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+       <!-- tab bar buttons -->
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_bar_bg"
+            android:orientation="horizontal"
+            android:paddingTop="0.0dip">
+
+            <RadioButton
+                android:id="@+id/main_index_search"
+                style="@style/MyTabButton"
+                android:checked="true"
+                android:drawableTop="@drawable/main_index_search_bg"
+                android:text="@string/main_index_search_txt" 
+                />
+
+            <RadioButton
+                android:id="@+id/main_index_tuan"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/main_index_tuan_bg"
+                android:text="@string/main_index_tuan_txt"
+                 />
+			
+             <RadioButton
+                android:id="@+id/main_index_checkin"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/main_index_checkin_bg"
+                android:text="@string/main_index_checkin_txt" />
+             
+            <RadioButton
+                android:id="@+id/main_index_topic"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/main_index_topic_bg"
+                android:visibility="gone"
+                android:text="@string/main_index_topic_txt" />
+            
+            <RadioButton
+                android:id="@+id/main_index_my"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/main_index_my_bg"
+                android:text="@string/main_index_my_txt" />
+
+            <RadioButton
+                android:id="@+id/main_index_more"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/main_index_more_bg"
+                android:text="@string/main_index_more_txt" />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>
+</LinearLayout>

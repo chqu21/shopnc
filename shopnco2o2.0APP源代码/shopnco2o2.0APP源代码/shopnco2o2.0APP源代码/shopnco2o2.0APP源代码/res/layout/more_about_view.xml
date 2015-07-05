@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_hui"
+    android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_background"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_back_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/btn_back_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="关于我们"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+         <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more_about_context_text"
+                android:textColor="#000000"
+                android:layout_margin="10dip"
+                android:textSize="16.0sp" />
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="vertical" >
+           <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="网址:"
+                android:textColor="#000000"
+                android:textSize="16.0sp" />
+           <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more_about_web_address_text"
+                android:textColor="#000000"
+                android:autoLink="web"
+                android:layout_marginTop="5dip"
+                android:textSize="16.0sp" />
+            </LinearLayout>
+           <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="软件版本:"
+                android:textColor="#000000"
+                 android:layout_gravity="center_vertical"
+                android:textSize="16.0sp" />
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version"
+                android:textColor="#000000"
+                android:autoLink="web"
+                android:layout_gravity="center_vertical"
+                android:textSize="16.0sp" />
+            </LinearLayout>
+</LinearLayout>

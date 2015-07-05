@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_hui">
+    <com.shopnc_local_life.android.widget.MyGallery 
+        android:id="@+id/start_g"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:spacing="0.0dp"
+        />
+</LinearLayout>

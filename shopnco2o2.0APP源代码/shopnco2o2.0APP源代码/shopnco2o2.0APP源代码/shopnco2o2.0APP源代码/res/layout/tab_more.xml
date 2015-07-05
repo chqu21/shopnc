@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_hui"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="更多"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="@drawable/more_settings_u" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                 android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="写点评"
+                    android:layout_weight="1"
+                    android:padding="10dip"
+                    android:background="@drawable/left_button_normal" />
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="添加商户"
+                    android:layout_weight="1"
+                     android:padding="10dip"
+                    android:background="@drawable/right_button_normal"/>
+            </LinearLayout>
+
+            <com.shopnc_local_life.android.widget.MyListView
+                android:id="@+id/lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="15dip"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/divider"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+
+            <com.shopnc_local_life.android.widget.MyListView
+                android:id="@+id/lv2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="20dip"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none"
+                android:listSelector="@color/transparent" />
+
+            <com.shopnc_local_life.android.widget.MyListView
+                android:id="@+id/lv3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="20dip"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none"
+                android:listSelector="@color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

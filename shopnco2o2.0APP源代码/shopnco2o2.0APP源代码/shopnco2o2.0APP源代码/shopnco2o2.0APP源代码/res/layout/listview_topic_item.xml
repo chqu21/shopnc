@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+    <LinearLayout
+        android:id="@+id/linearlayout_post"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_id"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:background="@drawable/photo_bg2"
+        android:padding="15.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16.0sp"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <ImageView 
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/avatar_96"/>
+                <ImageView 
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/avatar_96"/>
+                <ImageView 
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/avatar_96"/>
+                <ImageView 
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/avatar_96"/>
+                <ImageView 
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/avatar_96"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="09-30 截止"
+                    android:textColor="#909090"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="888人参与"
+                    android:textColor="#909090"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_below="@id/linearlayout_post" />
+
+</RelativeLayout>

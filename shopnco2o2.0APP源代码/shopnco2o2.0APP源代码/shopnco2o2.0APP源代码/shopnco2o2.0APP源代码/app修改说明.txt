@@ -1,0 +1,17 @@
+搜索：
+Constants.java这个文件下的/** 服务器IP */
+	public static final String HOST = "www.shopnctest.com/o2o/demo";
+
+搜索：
+strings.xml
+
+
+\android_shopnc_local_life\bin\res\drawable
+这个路经
+ic_launcher.png
+hello.png
+
+打包教程
+Android打包并发布自己的App
+将Eclipse Android项目打包成APK文件
+http://mobile.51cto.com/android-290817.htm

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="bg_hui">#F5F3F1</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#FB9114</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="black">#000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="pink">#E64D5E</color>
+</resources>

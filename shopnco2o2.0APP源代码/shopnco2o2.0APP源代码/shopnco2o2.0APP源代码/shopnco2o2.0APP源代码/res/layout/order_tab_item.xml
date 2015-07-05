@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_hui"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_back_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的订单"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0"
+                    android:visibility="gone" />
+                
+                    <RadioGroup
+                        android:id="@+id/main_tab_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip" >
+
+                        <RadioButton
+                            android:id="@+id/order_index_dingdan"
+                            style="@style/MyOrderTabItemButton"
+                            android:checked="true"
+                            android:layout_gravity="center"
+                            android:text="@string/order_tab_dingdan_shiyong_text" />
+
+                        <RadioButton
+                            android:id="@+id/order_index_youhuiquan"
+                            style="@style/MyOrderTabItemButton"
+                            android:text="@string/order_tab_dingdan_weishiyong_text" />
+
+                        <RadioButton
+                            android:id="@+id/order_index_huiyuanka"
+                            style="@style/MyOrderTabItemButton"
+                            android:text="@string/order_tab_dingdan_yiguoqi_text" />
+                    </RadioGroup>
+
+                  <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+
+                <!-- tab bar buttons -->
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+</LinearLayout>

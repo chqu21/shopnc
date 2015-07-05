@@ -1,0 +1,64 @@
+<?php
+defined('InShopNC') or exit('Access Invalid!');
+
+
+$lang['nc_store_is_exists']			= '商铺不存在';
+$lang['nc_view_store_is_not_exists'] = '您访问的商铺不存在!';
+$lang['nc_store_firstpage']				= "首页";
+$lang['nc_store_information']		= "商铺资料";
+$lang['nc_store_member_comment']			= "粉丝评价";
+$lang['nc_store_activity']			= "商铺活动";
+$lang['nc_store_preferential_acivity']	= "优惠活动";
+$lang['nc_store_upload_failure']			= "上传失败";
+$lang['nc_store_activity_is_not_null']	= "活动不存在";
+$lang['nc_store_please_login']			= "请登录以后申请参加活动";
+$lang['nc_store_activity_apply_succ']	= "申请成功";
+$lang['nc_store_activity_apply_fail']	= "申请失败";
+$lang['nc_store_upload_fail']		= "上传失败";
+$lang['nc_store_person_cost']		= "人均";
+$lang['nc_store_amount_score']		= "评分";
+$lang['nc_store_comment_num']		= '点评数';
+$lang['nc_store_view_num']			= '浏览数';
+$lang['nc_store_my_share']			= '我要分享';
+$lang['nc_store_we_share']			= "<strong>大家正</strong>在分享";
+$lang['nc_store_already']			= '已经';
+$lang['nc_store_already_person_apply']			= '人申请参加活动';
+$lang['nc_store_valid_date']		= '有效期';
+$lang['nc_store_share']				= '分享到';
+$lang['nc_store_activity_is_not_exists']	= '该商铺活动不存在！';
+$lang['nc_store_activity_member_already_apply']	= '您已经申请了该活动！';
+$lang['nc_store_limit_five_pic']	= '最多上传5张图';
+
+$lang['nc_store_detail_tel scan'] = '拿起手机扫一扫';
+$lang['nc_store_detail_the shop'] = '当前店铺';
+$lang['nc_store_detail_i have been to'] = '我也去过，说说我的感受';
+$lang['nc_store_detail_store'] = '店铺';
+$lang['nc_store_detail_recommend'] = '推荐';
+$lang['nc_store_detail_address'] = '地址';
+$lang['nc_store_detail_want to look'] = '想去看看';
+$lang['nc_store_detail_i want to say'] = '我去过，我想说说';
+$lang['nc_store_detail_beginning of my share'] = '开始我的分享';
+$lang['nc_store_detail_support batch upload'] = '支持批量上传，最多可添加5张图片，单个文件最大5M';
+$lang['nc_store_detail_consumption per person'] = '人均消费';
+$lang['nc_store_detail_parking information'] = '停车信息';
+$lang['nc_store_detail_tab'] = '标签';
+$lang['nc_store_detail_replay to'] = '回复需要';
+$lang['nc_store_detail_or'] = '或';
+$lang['nc_store_detail_immediate account registration'] = '立即注册账号';
+
+$lang['nc_store_intro_basic document'] = '基本资料';
+$lang['nc_store_intro_tel'] = '电话';
+$lang['nc_store_intro_side'] = '靠近';
+$lang['nc_store_intro_business hour'] = '营业时间';
+$lang['nc_store_intro_introduce'] = '介绍';
+$lang['nc_store_intro_shop picture'] = '商铺图片';
+$lang['nc_store_intro_map'] = '地图';
+$lang['nc_store_intro_the bus route'] = '公交路线';
+$lang['nc_store_intro_subway line'] = '地铁路线';
+$lang['nc_store_intro_nearby'] = '附近';
+$lang['nc_store_intro_shop name'] = '商铺名称';
+$lang['nc_store_intro_detailed address'] = '详细地址';
+$lang['nc_store_add_comment_succ'] = '添加评论成功';
+$lang['nc_store_add_comment_fail'] = '添加评论失败';
+$lang['nc_store_detail_person_cost_is_not_null'] = '人均消费不能为空';
+$lang['nc_store_detail_person_cost_range'] = '人均消费在0.01-100000之间';

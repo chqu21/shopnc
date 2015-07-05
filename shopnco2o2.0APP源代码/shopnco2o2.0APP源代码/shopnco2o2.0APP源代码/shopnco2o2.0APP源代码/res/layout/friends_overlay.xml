@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/v5_0_1_friend_overlay_bg"
+    android:gravity="center"
+    android:maxWidth="80dip"
+    android:minWidth="80dip"
+    android:padding="5dip"
+    android:textColor="#FFFFFF"
+    android:textSize="70sp" />
