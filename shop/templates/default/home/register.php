@@ -226,7 +226,16 @@ $(function(){
             },
             mobile:{
             	required : true,
-				phones:true
+				phones:true,
+                remote   : {
+                    url : 'index.php?act=login&op=check_mobile',
+                    type: 'get',
+                    data:{
+                        mobile : function(){
+                            return $('#mobile').val();
+                        }
+                    }
+                }
             },
             city_id:{
             	required : true,
@@ -272,7 +281,8 @@ $(function(){
             },
             mobile:{
             	required : '<?php echo $lang['nc_register_mobileis_is_not_null'];?>',
-				phones :'手机格式不正确!'
+				phones :'手机格式不正确!',
+                remote	 : '<?php echo $lang['nc_mobile_exists'];?>'
             },
             city_id:{
             	required : '<?php echo $lang['nc_register_city_is_not_null'];?>',

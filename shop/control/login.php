@@ -196,7 +196,31 @@
                 } 
 			}
 		}
-		
+
+        /**
+         * 手机号检测
+         */
+        public function check_mobileOp() {
+            $model	=	Model();
+            if($_GET['option'] == 'forget'){
+                $memberinfo = $model->table('member')->where(array('member_name'=>trim($_GET['member_name']),'mobile'=>trim($_GET['mobile'])))->find();
+                if(is_array($memberinfo) && count($memberinfo)>0){
+                    echo 'true';
+                }else{
+                    echo 'false';
+                }
+            }else{
+                $memberinfo   =   $model->table('member')->where(array('mobile'=>trim($_GET['mobile'])))->find();
+                if(is_array($memberinfo) and count($memberinfo)>0) {
+                    echo 'false';
+                } else {
+                    echo 'true';
+                }
+            }
+        }
+
+
+
 		/**
 		 * 忘记密码
 		 * */

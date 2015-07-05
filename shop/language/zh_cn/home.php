@@ -109,6 +109,7 @@ $lang['nc_email_is_not_null']	= '电子邮箱不能为空';
 $lang['nc_email_invalid']		= '这不是一个有效的电子邮箱';
 $lang['nc_email_exists']		= '电子邮箱已经存在';
 $lang['nc_email_not_exists']        = '电子邮箱不正确';
+$lang['nc_mobile_exists']		= '手机号已经存在';
 $lang['nc_captcha_is_not_null'] = '请输入验证码';
 $lang['nc_captcha_is_wrong']	= '验证码不正确';
 $lang['nc_must_agree']			= '请阅读并同意该协议';
