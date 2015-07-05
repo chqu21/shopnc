@@ -133,7 +133,7 @@ $(document).ready(function() {
       <input type="submit" class="login-submit" value="商家登录" name="Submit">
     </div>
   </form>
-  <div class="copyright">Powered by siyangtuan2014 © 2007-2014 <a href="http://www.siyangtuan.com/" target="_blank">siyangtuan.com</a> </div>
+  <div class="copyright">Powered by siyangtuan2014 © 2007-2014 <a href="http://www.chs360.cc/" target="_blank">www.chs360.cc</a> </div>
 </div>
 </body>
 </html>

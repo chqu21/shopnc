@@ -82,5 +82,4 @@ $lang['next_page'] = '下一页';
 $lang['nc_home']			= '首页';
 $lang['nc_join_us']			= '招聘英才';
 $lang['nc_adv_contact']		= '广告合作';
-$lang['nc_about_shopnc']	= '关于ShopNC';
 $lang['nc_about_us']		= '联系我们';

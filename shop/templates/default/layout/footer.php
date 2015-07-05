@@ -17,8 +17,8 @@
     |&nbsp;<a href="index.php?act=slogin"><?php echo $lang['nc_store_login'];?></a>
   </p>
   
-  Copyright 2007-2014 siyangtuan Inc.,All rights reserved.<br>
-  Powered by <span class="vol"><font class="b">siyang</font><font class="o">tuan</font></span>
+  Copyright 2007-2014 道和团队 Inc.,All rights reserved.<br>
+  Powered by <span class="vol"><font class="b">道和</font><font class="o">团队</font></span>
   <?php echo $GLOBALS['setting_config']['icp_number'];?><br>
   <?php echo htmlspecialchars_decode($GLOBALS['setting_config']['statistics_code']); ?><br>
 </div>

@@ -231,7 +231,7 @@ $(function(){
             <li><a href="javascript:void(0);"  id="item_admin_listadmin" name='item_admin_listadmin' onclick="javascript:openItem('admin_list,admin,setting')"><?php echo $lang['index_layout_admin_manage'];?></a></li>
             <li><a href="javascript:void(0);"  id="item_paymentpayment" name='item_paymentpayment' onclick="javascript:openItem('payment,payment,setting')"><?php echo $lang['index_layout_paymenttype'];?></a></li>
             <li><a href="javascript:void(0);"  id="item_cache_clearcache" name='item_cache_clearcache' onclick="javascript:openItem('cache_clear,cache,setting')">清理缓存</a></li>
-            <li><a href="javascript:void(0);"  id="item_aboutussetting" name='item_aboutussetting' onclick="javascript:openItem('aboutus,setting,setting')"><?php echo $lang['index_layout_about us'];?></a></li>
+
             <!--  
               <li><a href="javascript:void(0);"  id="item_loginsetting" name='item_loginsetting' onclick="javascript:openItem('qqlogin,setting,setting')">登陆方式</a></li>
               -->
